@@ -3,6 +3,7 @@ import StartScreen from '@/components/StartScreen';
 import QuizSelection from '@/components/QuizSelection';
 import GamePlay from '@/components/GamePlay';
 import ResultsScreen from '@/components/ResultsScreen';
+import FAQSection from '@/components/FAQSection';
 import questionsData from '@/data/questions.json';
 
 type GameState = 'start' | 'selection' | 'playing' | 'results';
@@ -57,14 +58,28 @@ const Index = () => {
   return (
     <>
       {gameState === 'start' && (
-        <StartScreen onStart={handleStart} />
+        <>
+          <StartScreen onStart={handleStart} />
+          <div className="bg-gradient-game py-16 px-4">
+            <FAQSection />
+            {/* Bottom Ad Space */}
+            <div className="w-full max-w-4xl mx-auto h-32 bg-muted/50 rounded-lg mt-8 flex items-center justify-center border-2 border-dashed border-border">
+              <span className="text-muted-foreground">Footer Advertisement</span>
+            </div>
+          </div>
+        </>
       )}
       
       {gameState === 'selection' && (
-        <QuizSelection 
-          onSelectQuiz={handleSelectQuiz}
-          onBack={handleBack}
-        />
+        <>
+          <QuizSelection 
+            onSelectQuiz={handleSelectQuiz}
+            onBack={handleBack}
+          />
+          <div className="bg-gradient-game py-16 px-4">
+            <FAQSection />
+          </div>
+        </>
       )}
       
       {gameState === 'playing' && selectedQuiz && (

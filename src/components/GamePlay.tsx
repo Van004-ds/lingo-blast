@@ -89,13 +89,14 @@ const GamePlay: React.FC<GamePlayProps> = ({ questions, quizName, onComplete }) 
   };
 
   return (
-    <div className="min-h-screen bg-gradient-game flex flex-col items-center justify-center p-4">
-      {/* Ad Banner Space */}
-      <div className="w-full max-w-4xl h-24 bg-muted/50 rounded-lg mb-6 flex items-center justify-center border-2 border-dashed border-border">
-        <span className="text-muted-foreground">Advertisement Banner</span>
+    <div className="min-h-screen bg-gradient-game flex flex-col">
+      {/* Top Banner Ad */}
+      <div className="w-full h-24 bg-muted/50 flex items-center justify-center border-b-2 border-dashed border-border sticky top-0 z-10">
+        <span className="text-muted-foreground">Responsive Banner Ad (728x90 / 320x50)</span>
       </div>
 
-      <div className="max-w-2xl w-full">
+      <div className="flex-1 flex items-center justify-center p-4">
+        <div className="max-w-2xl w-full">
         {/* Quiz Header */}
         <div className="game-card p-6 mb-6">
           <div className="flex justify-between items-center mb-4">
@@ -130,10 +131,17 @@ const GamePlay: React.FC<GamePlayProps> = ({ questions, quizName, onComplete }) 
             {question.question}
           </h2>
 
-          {/* Ad placement after question 5 */}
-          {currentQuestion === 4 && (
-            <div className="w-full h-20 bg-muted/50 rounded-lg mb-6 flex items-center justify-center border-2 border-dashed border-border">
-              <span className="text-muted-foreground text-sm">Mid-Quiz Advertisement</span>
+          {/* Inline Ad after Question 3 */}
+          {currentQuestion === 2 && (
+            <div className="w-full h-32 bg-muted/50 rounded-lg mb-6 flex items-center justify-center border-2 border-dashed border-border">
+              <span className="text-muted-foreground">Native Ad Block</span>
+            </div>
+          )}
+
+          {/* Inline Ad after Question 7 */}
+          {currentQuestion === 6 && (
+            <div className="w-full h-32 bg-muted/50 rounded-lg mb-6 flex items-center justify-center border-2 border-dashed border-border">
+              <span className="text-muted-foreground">Native Ad Block</span>
             </div>
           )}
 
@@ -185,6 +193,12 @@ const GamePlay: React.FC<GamePlayProps> = ({ questions, quizName, onComplete }) 
         )}
       </div>
     </div>
+
+    {/* Mobile Sticky Bottom Ad */}
+    <div className="lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-muted/50 flex items-center justify-center border-t-2 border-dashed border-border z-10">
+      <span className="text-muted-foreground">Mobile Sticky Banner (320x50)</span>
+    </div>
+  </div>
   );
 };
 

@@ -29,13 +29,14 @@ const ResultsScreen: React.FC<ResultsScreenProps> = ({
   const performance = getPerformanceMessage();
 
   return (
-    <div className="min-h-screen bg-gradient-game flex flex-col items-center justify-center p-4">
-      {/* Ad Banner Space */}
-      <div className="w-full max-w-4xl h-24 bg-muted/50 rounded-lg mb-8 flex items-center justify-center border-2 border-dashed border-border">
-        <span className="text-muted-foreground">Advertisement Banner</span>
+    <div className="min-h-screen bg-gradient-game flex flex-col">
+      {/* Top Large Banner Ad */}
+      <div className="w-full h-32 bg-muted/50 flex items-center justify-center border-b-2 border-dashed border-border">
+        <span className="text-muted-foreground">Large Banner Ad (970x90 / 728x90)</span>
       </div>
 
-      <div className="game-card max-w-md w-full p-8 text-center animate-bounce-in">
+      <div className="flex-1 flex items-center justify-center p-4">
+        <div className="game-card max-w-md w-full p-8 text-center animate-bounce-in">
         <div className="mb-6 flex justify-center">
           <div className="relative">
             {percentage >= 80 ? (
@@ -79,10 +80,15 @@ const ResultsScreen: React.FC<ResultsScreenProps> = ({
           ))}
         </div>
 
-        {/* Large Ad Space */}
-        <div className="w-full h-32 bg-muted/50 rounded-lg mb-8 flex items-center justify-center border-2 border-dashed border-border">
-          <span className="text-muted-foreground">Large Advertisement</span>
-        </div>
+          {/* Native Style Ad Block */}
+          <div className="w-full bg-muted/50 rounded-lg mb-6 p-4 border-2 border-dashed border-border">
+            <span className="text-muted-foreground text-sm">Native Ad: Recommended English Learning Resources</span>
+          </div>
+
+          {/* Large Rectangle Ad */}
+          <div className="w-full h-64 bg-muted/50 rounded-lg mb-8 flex items-center justify-center border-2 border-dashed border-border">
+            <span className="text-muted-foreground">Large Rectangle Ad (336x280)</span>
+          </div>
 
         <div className="space-y-4">
           <Button
@@ -103,7 +109,13 @@ const ResultsScreen: React.FC<ResultsScreenProps> = ({
             <Home className="mr-2 h-5 w-5" />
             Choose Another Quiz
           </Button>
+          </div>
         </div>
+      </div>
+
+      {/* Mobile Sticky Bottom Ad */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-muted/50 flex items-center justify-center border-t-2 border-dashed border-border z-10">
+        <span className="text-muted-foreground">Mobile Sticky Banner (320x50)</span>
       </div>
     </div>
   );

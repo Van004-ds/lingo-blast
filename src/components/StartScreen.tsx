@@ -8,27 +8,33 @@ interface StartScreenProps {
 
 const StartScreen: React.FC<StartScreenProps> = ({ onStart }) => {
   return (
-    <div className="min-h-screen bg-gradient-game flex flex-col items-center justify-center p-4">
-      {/* Ad Banner Space */}
-      <div className="w-full max-w-4xl h-24 bg-muted/50 rounded-lg mb-8 flex items-center justify-center border-2 border-dashed border-border">
-        <span className="text-muted-foreground">Advertisement Banner</span>
+    <div className="min-h-screen bg-gradient-game flex flex-col">
+      {/* Top Banner Ad */}
+      <div className="w-full h-24 bg-muted/50 flex items-center justify-center border-b-2 border-dashed border-border sticky top-0 z-10">
+        <span className="text-muted-foreground">Responsive Banner Ad (728x90 / 320x50)</span>
       </div>
 
-      <div className="game-card max-w-md w-full p-8 text-center animate-bounce-in">
-        <div className="mb-6 flex justify-center">
-          <div className="relative">
-            <Trophy className="w-20 h-20 text-warning animate-pulse-glow" />
-            <Sparkles className="w-8 h-8 text-accent absolute -top-2 -right-2 animate-pulse" />
+      <div className="flex-1 flex flex-col items-center justify-center p-4">
+        <div className="game-card max-w-md w-full p-8 text-center animate-bounce-in">
+          <div className="mb-6 flex justify-center">
+            <div className="relative">
+              <Trophy className="w-20 h-20 text-warning animate-pulse-glow" />
+              <Sparkles className="w-8 h-8 text-accent absolute -top-2 -right-2 animate-pulse" />
+            </div>
           </div>
-        </div>
 
-        <h1 className="text-5xl font-bold mb-4 text-gradient">
-          English Quiz Challenge
-        </h1>
+          <h1 className="text-5xl font-bold mb-4 text-gradient">
+            Play Free English Quizzes Online
+          </h1>
 
-        <p className="text-lg text-muted-foreground mb-8">
-          Test your English skills with fun and challenging quizzes!
-        </p>
+          <p className="text-lg text-muted-foreground mb-8">
+            Test your English skills with fun and challenging quizzes!
+          </p>
+
+          {/* Medium Rectangle Ad */}
+          <div className="w-full h-64 bg-muted/50 rounded-lg mb-8 flex items-center justify-center border-2 border-dashed border-border">
+            <span className="text-muted-foreground">Medium Rectangle Ad (300x250)</span>
+          </div>
 
         <div className="space-y-4">
           <Button
@@ -54,13 +60,19 @@ const StartScreen: React.FC<StartScreenProps> = ({ onStart }) => {
               <div className="text-sm text-muted-foreground">Per Question</div>
             </div>
           </div>
+          </div>
+        </div>
+
+        <div className="mt-8 text-center">
+          <p className="text-sm text-muted-foreground">
+            Challenge yourself and improve your English!
+          </p>
         </div>
       </div>
 
-      <div className="mt-8 text-center">
-        <p className="text-sm text-muted-foreground">
-          Challenge yourself and improve your English!
-        </p>
+      {/* Mobile Sticky Bottom Ad */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-muted/50 flex items-center justify-center border-t-2 border-dashed border-border z-10">
+        <span className="text-muted-foreground">Mobile Sticky Banner (320x50)</span>
       </div>
     </div>
   );
