@@ -78,6 +78,10 @@ const Index = () => {
           />
           <div className="bg-gradient-game py-16 px-4">
             <FAQSection />
+            {/* Bottom Ad Space */}
+            <div className="w-full max-w-4xl mx-auto h-32 bg-muted/50 rounded-lg mt-8 flex items-center justify-center border-2 border-dashed border-border">
+              <span className="text-muted-foreground">Footer Advertisement</span>
+            </div>
           </div>
         </>
       )}

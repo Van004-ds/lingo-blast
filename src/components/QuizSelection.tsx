@@ -123,6 +123,11 @@ const QuizSelection: React.FC<QuizSelectionProps> = ({ onSelectQuiz, onBack }) =
               Each quiz contains 10 questions with a 10-second timer per question
             </p>
           </div>
+          
+          {/* Additional Ad Space */}
+          <div className="w-full max-w-md mx-auto h-64 bg-muted/50 rounded-lg mt-8 flex items-center justify-center border-2 border-dashed border-border">
+            <span className="text-muted-foreground">Square Ad (250x250)</span>
+          </div>
         </div>
       </div>
 

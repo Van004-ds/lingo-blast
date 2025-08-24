@@ -95,7 +95,12 @@ const GamePlay: React.FC<GamePlayProps> = ({ questions, quizName, onComplete }) 
         <span className="text-muted-foreground">Responsive Banner Ad (728x90 / 320x50)</span>
       </div>
 
-      <div className="flex-1 flex items-center justify-center p-4">
+      <div className="flex-1 flex gap-4 items-center justify-center p-4">
+        {/* Left Sidebar Ad - Desktop Only */}
+        <div className="hidden xl:block w-44 h-[600px] bg-muted/50 rounded-lg flex items-center justify-center border-2 border-dashed border-border flex-shrink-0">
+          <span className="text-muted-foreground rotate-90">Left Skyscraper (160x600)</span>
+        </div>
+        
         <div className="max-w-2xl w-full">
         {/* Quiz Header */}
         <div className="game-card p-6 mb-6">
