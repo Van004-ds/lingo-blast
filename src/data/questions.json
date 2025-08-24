@@ -1,0 +1,307 @@
+{
+  "vocabulary": [
+    {
+      "question": "What does 'ubiquitous' mean?",
+      "options": ["Rare", "Present everywhere", "Underground", "Mysterious"],
+      "correct": 1
+    },
+    {
+      "question": "Choose the synonym for 'eloquent':",
+      "options": ["Silent", "Rude", "Articulate", "Confused"],
+      "correct": 2
+    },
+    {
+      "question": "What is the meaning of 'ephemeral'?",
+      "options": ["Eternal", "Heavy", "Short-lived", "Bright"],
+      "correct": 2
+    },
+    {
+      "question": "Select the word that means 'to make something worse':",
+      "options": ["Ameliorate", "Exacerbate", "Facilitate", "Negotiate"],
+      "correct": 1
+    },
+    {
+      "question": "What does 'serendipity' mean?",
+      "options": ["Bad luck", "Happy accident", "Planned event", "Sadness"],
+      "correct": 1
+    },
+    {
+      "question": "Choose the meaning of 'pragmatic':",
+      "options": ["Idealistic", "Practical", "Emotional", "Theoretical"],
+      "correct": 1
+    },
+    {
+      "question": "What does 'ambivalent' mean?",
+      "options": ["Clear", "Having mixed feelings", "Angry", "Happy"],
+      "correct": 1
+    },
+    {
+      "question": "Select the synonym for 'meticulous':",
+      "options": ["Careless", "Quick", "Thorough", "Lazy"],
+      "correct": 2
+    },
+    {
+      "question": "What is the meaning of 'benevolent'?",
+      "options": ["Evil", "Kind", "Neutral", "Angry"],
+      "correct": 1
+    },
+    {
+      "question": "Choose the word meaning 'talkative':",
+      "options": ["Taciturn", "Garrulous", "Silent", "Morose"],
+      "correct": 1
+    }
+  ],
+  "grammar": [
+    {
+      "question": "Which sentence is grammatically correct?",
+      "options": [
+        "Neither of them are coming",
+        "Neither of them is coming",
+        "Neither of them be coming",
+        "Neither of them were coming"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Choose the correct form: 'If I ___ rich, I would travel the world.'",
+      "options": ["am", "was", "were", "be"],
+      "correct": 2
+    },
+    {
+      "question": "Identify the correct use of 'whom':",
+      "options": [
+        "Whom is calling?",
+        "To whom it may concern",
+        "Whom are you?",
+        "Whom went there?"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Select the sentence with correct punctuation:",
+      "options": [
+        "Its a beautiful day",
+        "It's a beautiful day",
+        "Its' a beautiful day",
+        "I'ts a beautiful day"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which sentence uses the subjunctive mood correctly?",
+      "options": [
+        "I suggest he goes now",
+        "I suggest he go now",
+        "I suggest he went now",
+        "I suggest he going now"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Choose the correct verb tense: 'By next year, I ___ here for 10 years.'",
+      "options": [
+        "will work",
+        "will have worked",
+        "will be working",
+        "work"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which sentence has correct subject-verb agreement?",
+      "options": [
+        "The team are winning",
+        "The team is winning",
+        "The team be winning",
+        "The team were winning"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Identify the sentence with a dangling modifier:",
+      "options": [
+        "Running quickly, the finish line came into view",
+        "Running quickly, I saw the finish line",
+        "I ran quickly to the finish line",
+        "The finish line was visible as I ran"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Choose the correct comparative form:",
+      "options": [
+        "This is more better",
+        "This is more good",
+        "This is better",
+        "This is most good"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which sentence uses 'affect' correctly?",
+      "options": [
+        "The weather will effect our plans",
+        "The weather will affect our plans",
+        "The affect of weather on our plans",
+        "Our plans were affective"
+      ],
+      "correct": 1
+    }
+  ],
+  "synonymsAntonyms": [
+    {
+      "question": "What is the antonym of 'abundant'?",
+      "options": ["Plentiful", "Scarce", "Many", "Rich"],
+      "correct": 1
+    },
+    {
+      "question": "Choose the synonym for 'arduous':",
+      "options": ["Easy", "Difficult", "Quick", "Pleasant"],
+      "correct": 1
+    },
+    {
+      "question": "What is the opposite of 'gregarious'?",
+      "options": ["Social", "Friendly", "Solitary", "Talkative"],
+      "correct": 2
+    },
+    {
+      "question": "Select the synonym for 'candid':",
+      "options": ["Dishonest", "Frank", "Secretive", "Quiet"],
+      "correct": 1
+    },
+    {
+      "question": "What is the antonym of 'frugal'?",
+      "options": ["Thrifty", "Wasteful", "Careful", "Economical"],
+      "correct": 1
+    },
+    {
+      "question": "Choose the synonym for 'lethargic':",
+      "options": ["Energetic", "Sluggish", "Active", "Quick"],
+      "correct": 1
+    },
+    {
+      "question": "What is the opposite of 'novice'?",
+      "options": ["Beginner", "Student", "Expert", "Learner"],
+      "correct": 2
+    },
+    {
+      "question": "Select the synonym for 'zenith':",
+      "options": ["Bottom", "Peak", "Middle", "Start"],
+      "correct": 1
+    },
+    {
+      "question": "What is the antonym of 'verbose'?",
+      "options": ["Wordy", "Talkative", "Concise", "Lengthy"],
+      "correct": 2
+    },
+    {
+      "question": "Choose the synonym for 'mundane':",
+      "options": ["Exciting", "Ordinary", "Special", "Unique"],
+      "correct": 1
+    }
+  ],
+  "spelling": [
+    {
+      "question": "Which spelling is correct?",
+      "options": ["Accomodate", "Accommodate", "Acomodate", "Acommodate"],
+      "correct": 1
+    },
+    {
+      "question": "Choose the correctly spelled word:",
+      "options": ["Definately", "Definitely", "Definatly", "Definitly"],
+      "correct": 1
+    },
+    {
+      "question": "Which word is spelled correctly?",
+      "options": ["Occurance", "Occurence", "Occurrence", "Ocurrence"],
+      "correct": 2
+    },
+    {
+      "question": "Select the correct spelling:",
+      "options": ["Privilege", "Priviledge", "Privelege", "Privelige"],
+      "correct": 0
+    },
+    {
+      "question": "Which spelling is correct?",
+      "options": ["Recieve", "Receive", "Receeve", "Receve"],
+      "correct": 1
+    },
+    {
+      "question": "Choose the correctly spelled word:",
+      "options": ["Seperate", "Separete", "Separate", "Seperete"],
+      "correct": 2
+    },
+    {
+      "question": "Which word is spelled correctly?",
+      "options": ["Necessary", "Neccessary", "Necesary", "Neccesary"],
+      "correct": 0
+    },
+    {
+      "question": "Select the correct spelling:",
+      "options": ["Embarass", "Embarrass", "Embarras", "Emberrass"],
+      "correct": 1
+    },
+    {
+      "question": "Which spelling is correct?",
+      "options": ["Conscientious", "Consciencious", "Concsientious", "Consciensious"],
+      "correct": 0
+    },
+    {
+      "question": "Choose the correctly spelled word:",
+      "options": ["Maintenence", "Maintenance", "Maintainance", "Maintanance"],
+      "correct": 1
+    }
+  ],
+  "dailyPuzzle": [
+    {
+      "question": "Unscramble this word: EGNAULAG",
+      "options": ["LANGUAGE", "LANGUEGE", "LANGAUGE", "LANGUIGE"],
+      "correct": 0
+    },
+    {
+      "question": "Which word completes the idiom: 'Break a ___'?",
+      "options": ["bone", "leg", "rule", "promise"],
+      "correct": 1
+    },
+    {
+      "question": "Find the odd one out:",
+      "options": ["Simile", "Metaphor", "Hyperbole", "Conjunction"],
+      "correct": 3
+    },
+    {
+      "question": "Complete the proverb: 'A bird in the hand is worth ___ in the bush'",
+      "options": ["one", "two", "three", "many"],
+      "correct": 1
+    },
+    {
+      "question": "Which word doesn't belong in this group?",
+      "options": ["Happy", "Joyful", "Elated", "Melancholy"],
+      "correct": 3
+    },
+    {
+      "question": "Unscramble: TNEREFFID",
+      "options": ["DIFFERENT", "DIFERENT", "DIFFERNET", "DIFIRENT"],
+      "correct": 0
+    },
+    {
+      "question": "What comes next in the pattern: A, E, I, M, ___?",
+      "options": ["O", "P", "Q", "R"],
+      "correct": 2
+    },
+    {
+      "question": "Which word is a palindrome?",
+      "options": ["Level", "Letter", "Label", "Legal"],
+      "correct": 0
+    },
+    {
+      "question": "Complete the analogy: Book is to Read as Fork is to ___?",
+      "options": ["Spoon", "Eat", "Kitchen", "Food"],
+      "correct": 1
+    },
+    {
+      "question": "Find the rhyming word for 'weight':",
+      "options": ["Height", "Light", "Straight", "Eight"],
+      "correct": 3
+    }
+  ]
+}
